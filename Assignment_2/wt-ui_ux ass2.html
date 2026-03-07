@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Paradise</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f4f4;
+}
+
+/* Navbar */
+
+nav{
+background:#ff5722;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+position:sticky;
+top:0;
+}
+
+nav h1{
+color:white;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+}
+
+/* Home */
+
+#home{
+height:90vh;
+background:url("https://wallpapers.com/images/hd/food-4k-1pf6px6ryqfjtnyr.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+#home h2{
+font-size:60px;
+background:rgba(0,0,0,0.5);
+padding:10px 20px;
+}
+
+#home p{
+font-size:22px;
+margin-top:10px;
+background:rgba(0,0,0,0.5);
+padding:10px;
+}
+
+/* Menu */
+
+#menu{
+padding:60px;
+text-align:center;
+}
+
+#menu h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.menu-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.card{
+background:white;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:160px;
+}
+
+.card h3{
+padding:10px;
+}
+
+.card p{
+padding:0 10px 10px;
+}
+
+.card button{
+margin:10px;
+padding:10px;
+border:none;
+background:#ff5722;
+color:white;
+cursor:pointer;
+width:90%;
+}
+
+/* Gallery */
+
+#gallery{
+padding:60px;
+text-align:center;
+background:#eee;
+}
+
+#gallery h2{
+font-size:40px;
+margin-bottom:30px;
+}
+
+#gallery img{
+width:280px;
+height:200px;
+margin:10px;
+border-radius:10px;
+}
+
+/* About */
+
+#about{
+padding:60px;
+text-align:center;
+}
+
+#about h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+#about p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+/* Contact */
+
+#contact{
+padding:60px;
+text-align:center;
+background:#eee;
+}
+
+#contact h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+form{
+max-width:400px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+}
+
+button{
+background:#ff5722;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+width:100%;
+}
+
+/* Footer */
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Food Paradise</h1>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="home">
+<h2>Delicious Food</h2>
+<p>Fresh • Tasty • Healthy</p>
+</section>
+
+<section id="menu">
+
+<h2>Our Menu</h2>
+
+<div class="menu-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+<h3>Burger</h3>
+<p>Delicious cheese burger</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
+<h3>Pizza</h3>
+<p>Hot Italian pizza</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://tse4.mm.bing.net/th/id/OIP.lGOT3V2OtZTP2zVUmRszJwHaGy?pid=Api&P=0&h=180">
+<h3>Pasta</h3>
+<p>Creamy pasta special</p>
+<button>Order Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Food Gallery</h2>
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+<img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+<img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d">
+
+</section>
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p>
+Food Paradise is a place where taste meets quality.
+We serve fresh and delicious food made by professional chefs.
+Our goal is to give customers the best food experience.
+</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Food Paradise | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
